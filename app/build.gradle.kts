@@ -3,9 +3,9 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
-    id("com.google.dagger.hilt.android")
-    id("kotlin-kapt")
 
+    id("com.google.dagger.hilt.android")
+    kotlin("kapt")
 }
 
 android {
@@ -35,11 +35,12 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_11.toString()
+        jvmTarget = "17"
+
     }
     buildFeatures {
         compose = true
@@ -72,7 +73,6 @@ dependencies {
 
     implementation(libs.dagger.hilt)
     kapt(libs.dagger.compiler)
-    kapt(libs.android.hilt)
     implementation(libs.hilt.navigation)
 
 
@@ -97,4 +97,7 @@ dependencies {
     androidTestImplementation(libs.ui.test.junit4)
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
+}
+kapt {
+    correctErrorTypes = true
 }

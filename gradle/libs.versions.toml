@@ -21,17 +21,18 @@ androidx_activity_compose = "1.7.2"
 compose_runtime_livedata = "1.5.2"
 compose_navigation = "2.7.3"
 coil = "2.4.0"
-retrofit= "2.9.0"
+retrofit = "2.9.0"
 sqaure_logger = "5.0.0-alpha.2"
-okhttp3="4.11.0"
+okhttp3 = "4.11.0"
 gson = "2.10.1"
 viewModel_compose = "2.6.1"
 material_icon = "1.5.4"
-room="2.6.0"
+room = "2.6.0"
 dagger_hilt = "2.48"
-dagger_compiler = "2.44"
+dagger_compiler = "2.48"
 dagger_android = "1.1.0"
-systemuicontroller="0.27.0"
+systemuicontroller = "0.27.0"
+ksp = "1.8.10-1.0.9"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -55,40 +56,40 @@ androidx_lifecycle_viewmodel_ktx = { module = "androidx.lifecycle:lifecycle-view
 androidx_lifecycle_livedata_ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "androidx_lifecycle_ktx" }
 androidx_appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidx_appcompat" }
 androidx_google_material = { module = "com.google.android.material:material", version.ref = "google_material" }
-coroutines_android = {module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines"}
+coroutines_android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
 compose_ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
 compose_material = { module = "androidx.compose.material:material", version.ref = "compose_material" }
 compose_material3 = { module = "androidx.compose.material3:material3", version.ref = "compose_material3" }
 compose_icons = { module = "androidx.compose.material:material-icons-extended", version.ref = "compose" }
-androidx_activity_compose = {module = "androidx.activity:activity-compose", version.ref = "androidx_activity_compose"}
-compose_runtime_livedata = {module = "androidx.compose.runtime:runtime-livedata", version.ref = "compose_runtime_livedata"}
-compose_navigation = { group = "androidx.navigation",name="navigation-compose", version.ref = "compose_navigation" }
+androidx_activity_compose = { module = "androidx.activity:activity-compose", version.ref = "androidx_activity_compose" }
+compose_runtime_livedata = { module = "androidx.compose.runtime:runtime-livedata", version.ref = "compose_runtime_livedata" }
+compose_navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "compose_navigation" }
 compose_tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
 compose_tooling_preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
-coil = { group = "io.coil-kt",name="coil-compose", version.ref = "coil" }
+coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
 
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 retrofit_gson_converter = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
 sqaure_logger = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "sqaure_logger" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
-okhttp3 = { group = "com.squareup.okhttp3",name="okhttp", version.ref = "okhttp3" }
+okhttp3 = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp3" }
 
 chuckerteam = { module = "com.github.chuckerteam.chucker:library", version.ref = "chucker" }
 chuckerteam_no_op = { module = "com.github.chuckerteam.chucker:library-no-op", version.ref = "chucker" }
 
-compose-viewModel = { group ="androidx.lifecycle", name="lifecycle-viewmodel-compose", version.ref ="viewModel_compose"}
+compose-viewModel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "viewModel_compose" }
 
-material-icon = {group = "androidx.compose.material", name = "material-icons-extended",version.ref="material_icon"}
+material-icon = { group = "androidx.compose.material", name = "material-icons-extended", version.ref = "material_icon" }
 
-room-ktx= {group = "androidx.room" , name ="room-ktx",version.ref="room"}
-room-complier = {group = "androidx.room",name = "room-compiler",version.ref="room"}
-room-paging ={group="androidx.room",name ="room-paging",version.ref="room"}
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+room-complier = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+room-paging = { group = "androidx.room", name = "room-paging", version.ref = "room" }
 
-dagger-hilt = {group="com.google.dagger",name="hilt-android",version.ref="dagger_hilt"}
-dagger-compiler = {group="com.google.dagger",name="hilt-compiler",version.ref="dagger_compiler"}
-android-hilt = {group ="androidx.hilt",name ="hilt-compiler",version.ref="dagger_android"}
-hilt-navigation = {group = "androidx.hilt",name="hilt-navigation-compose",version.ref="dagger_android"}
-sytem-ui-controller ={group ="com.google.accompanist",name ="accompanist-systemuicontroller",version.ref="systemuicontroller"}
+dagger-hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "dagger_hilt" }
+dagger-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "dagger_compiler" }
+android-hilt = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "dagger_android" }
+hilt-navigation = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "dagger_android" }
+sytem-ui-controller = { group = "com.google.accompanist", name = "accompanist-systemuicontroller", version.ref = "systemuicontroller" }
 
 
 
@@ -96,6 +97,6 @@ sytem-ui-controller ={group ="com.google.accompanist",name ="accompanist-systemu
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-hilt = {id ="com.google.dagger.hilt.android" ,version.ref="dagger_hilt"}
-
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "dagger_hilt" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 

@@ -3,7 +3,7 @@ package com.task.movieapp.movielist.data.local
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "MovieEntity")
+@Entity
 data class MovieEntity(
     @PrimaryKey(autoGenerate = true)
     val id: Int,
