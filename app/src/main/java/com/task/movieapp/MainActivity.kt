@@ -44,9 +44,9 @@ class MainActivity : ComponentActivity() {
                             arguments = listOf(
                                 navArgument("movieId") { type = NavType.StringType }
                             )
-                        ) { backStackEnty ->
+                        ) { backStackEntry ->
 
-                            backStackEnty.arguments?.getString("movieId", "")
+                            backStackEntry.arguments?.getString("movieId", "")
 
                         }
                     }

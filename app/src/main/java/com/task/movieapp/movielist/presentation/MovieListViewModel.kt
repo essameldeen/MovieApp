@@ -81,10 +81,11 @@ class MovieListViewModel @Inject constructor(
 
                     is Resource.Success -> {
 
-                        result.data.let {
+                        result.data.let { upComingMovieList ->
                             _movieListState.update {
                                 it.copy(
-                                    upComingMovieList = movieListState.value.upComingMovieList + it.upComingMovieList.shuffled(),
+                                    upComingMovieList = movieListState.value.upComingMovieList + (upComingMovieList?.shuffled()
+                                        ?: emptyList()),
                                     movieListUpComingPage = movieListState.value.movieListUpComingPage + 1
                                 )
                             }
@@ -144,10 +145,11 @@ class MovieListViewModel @Inject constructor(
 
                     is Resource.Success -> {
 
-                        result.data.let {
+                        result.data.let { popularMovieList ->
                             _movieListState.update {
                                 it.copy(
-                                    popularMovieList = movieListState.value.popularMovieList + it.popularMovieList.shuffled(),
+                                    popularMovieList = movieListState.value.popularMovieList + (popularMovieList?.shuffled()
+                                        ?: emptyList()),
                                     movieListPopularPage = movieListState.value.movieListPopularPage + 1
                                 )
                             }

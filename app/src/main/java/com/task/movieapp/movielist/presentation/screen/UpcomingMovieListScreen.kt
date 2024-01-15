@@ -19,16 +19,14 @@ import com.task.movieapp.movielist.presentation.component.MovieItem
 import com.task.movieapp.utils.Category
 import com.task.movieapp.utils.Screen
 
-
 @Composable
-fun PopularMovieListScreen(
+fun UpcomingMovieListScreen(
     navController: NavController,
     state: MovieListState,
     onEvent: (MovieListUiEvent) -> Unit
 ) {
 
-
-    if (state.popularMovieList.isEmpty()) {
+    if (state.upComingMovieList.isEmpty()) {
         Box(
             modifier = Modifier.fillMaxSize(),
             contentAlignment = Alignment.Center
@@ -41,14 +39,14 @@ fun PopularMovieListScreen(
             modifier = Modifier.fillMaxSize(),
             contentPadding = PaddingValues(horizontal = 4.dp, vertical = 8.dp)
         ) {
-            items(state.popularMovieList.size) { index ->
-                MovieItem(movie = state.popularMovieList[index]) { movie ->
+            items(state.upComingMovieList.size) { index ->
+                MovieItem(movie = state.upComingMovieList[index]) { movie ->
                     navController.navigate(Screen.Details.rout + "/${movie.id}")
                 }
                 Spacer(modifier = Modifier.height(16.dp))
 
-                if (index >= state.popularMovieList.size - 1 && !state.isLoading) {
-                    onEvent(MovieListUiEvent.Paginate(Category.POPULAR))
+                if (index >= state.upComingMovieList.size - 1 && !state.isLoading) {
+                    onEvent(MovieListUiEvent.Paginate(Category.UPCOMING))
                 }
             }
         }
