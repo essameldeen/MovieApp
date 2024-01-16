@@ -1,5 +1,5 @@
-$Movie App 
-- Deom App For Learing new Technology :
+**Movie App** 
+<h1 align="center">Deom App For Learing new Technology </h1>
 - Clean Architecture.
 - Jetpack Compoase for ui.
 - hilt for dependency injection.
