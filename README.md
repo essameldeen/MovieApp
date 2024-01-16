@@ -8,4 +8,4 @@
 - coil for image loading.
 - coroutines and flow.
 - retrofit for network connection.
-- kotiln dsl and verison catelog for managment dependency 
+- kotlin dsl and verison catelog for managment dependency 
