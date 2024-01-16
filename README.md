@@ -1,4 +1,4 @@
-#Movie App 
+$Movie App 
 - Deom App For Learing new Technology :
 - Clean Architecture.
 - Jetpack Compoase for ui.
