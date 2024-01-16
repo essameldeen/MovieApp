@@ -79,7 +79,7 @@ fun MovieItem(movie: Movie, onMovieClick: (Movie) -> Unit) {
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(250.dp)
+                    .height(220.dp)
                     .padding(6.dp)
                     .clip(RoundedCornerShape(22.dp))
                     .background(
@@ -87,6 +87,7 @@ fun MovieItem(movie: Movie, onMovieClick: (Movie) -> Unit) {
                     ), contentAlignment = Alignment.Center
             ) {
                 Icon(
+                    modifier = Modifier.size(70.dp),
                     imageVector = Icons.Rounded.ImageNotSupported,
                     contentDescription = "PlaceHolder"
                 )
@@ -98,7 +99,7 @@ fun MovieItem(movie: Movie, onMovieClick: (Movie) -> Unit) {
             Image(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(250.dp)
+                    .height(220.dp)
                     .padding(6.dp)
                     .clip(RoundedCornerShape(22.dp)),
                 painter = imageState.painter,
@@ -110,7 +111,7 @@ fun MovieItem(movie: Movie, onMovieClick: (Movie) -> Unit) {
         Spacer(modifier = Modifier.height(6.dp))
         Text(
             text = movie.title,
-            modifier = Modifier.padding(start = 26.dp, end = 8.dp),
+            modifier = Modifier.padding(start = 16.dp, end = 8.dp),
             color = Color.White,
             fontSize = 15.sp,
             maxLines = 1

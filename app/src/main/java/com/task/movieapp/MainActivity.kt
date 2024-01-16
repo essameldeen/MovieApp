@@ -17,6 +17,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
+import com.task.movieapp.details.presentation.DetailsScreen
 import com.task.movieapp.ui.theme.MovieAppTheme
 import com.task.movieapp.utils.Screen
 import dagger.hilt.android.AndroidEntryPoint
@@ -42,12 +43,10 @@ class MainActivity : ComponentActivity() {
                         }
                         composable(Screen.Details.rout + "/{movieId}",
                             arguments = listOf(
-                                navArgument("movieId") { type = NavType.StringType }
+                                navArgument("movieId") { type = NavType.IntType }
                             )
                         ) { backStackEntry ->
-
-                            backStackEntry.arguments?.getString("movieId", "")
-
+                            DetailsScreen()
                         }
                     }
                 }
